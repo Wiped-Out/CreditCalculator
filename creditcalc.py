@@ -1,5 +1,7 @@
 # write your code here
 import math
+
+
 def repay(principal, payment):
     months = round(principal / payment)
     if int(months) == 1:
@@ -8,7 +10,7 @@ def repay(principal, payment):
         return f'It takes {months} months to repay the credit'
 
 
-def payment(principal, months):
+def monthly_payment(principal, months):
     count = math.ceil(principal / months)
     if count * months != principal:
         last_payment = round(principal - (months - 1) * count)
@@ -26,9 +28,10 @@ print('type "p" - for monthly payment: ')
 calc = input()
 if calc == 'm':
     print('Enter monthly payment: ')
-    monthly_payment = int(input())
-    print(repay(principal_credit, monthly_payment))
+    monthly = int(input())
+    print(repay(principal_credit, monthly))
+
 else:
     print('Enter count of months: ')
     count_months = float(input())
-    print(payment(principal_credit, count_months))
+    print(monthly_payment(principal_credit, count_months))
