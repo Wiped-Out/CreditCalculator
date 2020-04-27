@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 from math import log, ceil
 
 
@@ -44,7 +46,7 @@ while True:
     type "a" - for annuity monthly payment,
     type "p" - for credit principal,
     type "exit" - to exit the program:''')
-    usr_input = input().lower()
+    usr_input = input('> ').lower()
     if usr_input == 'exit':
         break
     else:
