@@ -1,2 +1,2 @@
 ## JetBrains Academy / Python
-<p align="center">Credit Calculator project.</p>
+<p>Credit Calculator project.</p>
